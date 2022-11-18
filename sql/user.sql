@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS `happyhouse`.`user` (
+  `userid` VARCHAR(16) NOT NULL,
+  `username` VARCHAR(20) NOT NULL,
+  `userpwd` VARCHAR(16) NOT NULL,
+  `email` VARCHAR(50) NULL DEFAULT NULL,
+  `joindate` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`userid`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci
